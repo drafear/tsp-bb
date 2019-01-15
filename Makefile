@@ -1,4 +1,4 @@
-all: bin/bb.out bin/bb_flow.out bin/dp.out
+all: bin/bb.out bin/bb_flow.out bin/dp.out bin/b.out
 
 bin/%.out: src/%.cpp
 	mkdir -p bin

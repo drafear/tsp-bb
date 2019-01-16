@@ -124,13 +124,8 @@ public:
       }
       int V = left.size();
       vector<int> right = left;
-      if (left.size() % 2 == 0) {
-        right.push_back(v);
-      }
-      else {
-        left.push_back(v);
-      }
       left.push_back(0);
+      right.push_back(v);
       int s = left.size() + right.size(), t = s+1;
       MinCostFlow mcf(t+1);
       for (auto&& i : left) mcf.add(s, i, 1, 0);
